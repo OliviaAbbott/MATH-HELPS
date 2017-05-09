@@ -1,3 +1,7 @@
+body {
+  background-color: SkyBlue;
+}
+
 #title{
   padding-top: 30px;
   text-align: center;
@@ -40,9 +44,10 @@ a:hover{
 
 div li{
   font-family: "Arial", Arial, serif;
+  font-size: 16px;
 }
 
-img {
+#image {
     padding-top: 0px;
     display: block;
     margin: auto;
@@ -50,4 +55,8 @@ img {
 
 .center{
   text-align: center;
+}
+
+.puzzle{
+  padding-top: 20px;
 }
