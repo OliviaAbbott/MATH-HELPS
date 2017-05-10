@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title> MATH HELPS </title>
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="java.js"></script>
   </head>
 
   <body lang="en-US" class = "index" >
@@ -22,8 +22,12 @@
           target="_blank">Vocab</a>
         </li>
         <li class="nav_bar">
-          <a class="navigation" href="flashcards.html"
-           target="_blank">Flashcards</a>
+          <a class="navigation" href="practice.html"
+          target="_blank">Practice</a>
+        </li>
+        <li class="nav_bar">
+          <a class="navigation" href="extra.html"
+          target="_blank">Extra Help</a>
         </li>
         <li class="nav_bar">
           <a class="navigation" id="current" href="puzzle1.html"
@@ -33,13 +37,15 @@
           <a class="navigation" href="puzzle2.html"
            target="_blank">Puzzle 2</a>
         </li>
+        <!--
         <li class="nav_bar">
           <a class="navigation" href="flashcards.html"
            target="_blank">Puzzle 3</a>
-        </li>
+        </li>-->
       </ul>
     </div>
     <h2> What is Unusual About The New Surgeon Doll? </h2>
+    <p> Puzzle created by: Creative Publications </p>
     <p> Find the measures of the following angles: </p>
     <img src="Images/puzzle1-1.jpg" alt="puzzle 1 image" class="puzzle" style="width:383;height:243">
     <p> Problems 1-6 use above image: </p>
@@ -299,5 +305,10 @@
       <div class="input-group">
         <input type="text" id="puzzle1Answer" class="form-control">
       </div>
-      <button class="btn btn-default" type="submit" onclick="puzzle1();">Check</button>
+      <button class="btn btn-default" type="submit" onclick="checkPuzzle1();">Submit</button>
     </div>
+    <br>
+    <a class="btn btn-default" href="puzzle2.html" role="button">Go to Puzzle 2</a>
+    <a class="btn btn-default" href="index.html" role="button">Return Home</a>
+  </body>
+</html>
