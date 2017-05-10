@@ -4,11 +4,11 @@ function checkPuzzle1()
   answer = document.getElementById("puzzle1Answer").value;
   if(answer == "It operates on batteries" || answer == "it operates on batteries")
   {
-    document.getElementById(i).style.background = 'LightGreen';
+    document.getElementById("puzzle1Answer").style.background = 'LightGreen';
   }
   else
   {
-    alert("Incorrect Answer; Try Again");
+    document.getElementById("puzzle1Answer").style.background = 'LightCoral';
   }
 }
 
@@ -65,7 +65,7 @@ function checkProblem1()
   var b = document.getElementById("problem1b").value;
   setCookie("problem1b", b, 10);
   var c = document.getElementById("problem1c").value;
-  setCookie("problem1a", c, 10);
+  setCookie("problem1c", c, 10);
   document.getElementById("problem_2").removeAttribute("hidden");
 }
 
@@ -85,7 +85,7 @@ function checkProblem3()
   var b = document.getElementById("problem3b").value;
   setCookie("problem3b", b, 10);
   var c = document.getElementById("problem3c").value;
-  setCookie("problem3a", c, 10);
+  setCookie("problem3c", c, 10);
   document.getElementById("problem_4").removeAttribute("hidden");
 
 }
@@ -258,30 +258,30 @@ function calculateScore()
   }
   if(problem6 == "45")
   {
-    document.getElementById("6").innerHTML = " 10/10"
+    document.getElementById("6").innerHTML = "Problem 6: 10/10"
     total = total + 10;
   }
   else
   {
-    document.getElementById("6").innerHTML = " 0/10"
+    document.getElementById("6").innerHTML = "Problem 6: 0/10"
   }
   if(problem7 == "20")
   {
-    document.getElementById("7").innerHTML = " 10/10"
+    document.getElementById("7").innerHTML = "Problem 7: 10/10"
     total = total + 10;
   }
   else
   {
-    document.getElementById("7").innerHTML = " 0/10"
+    document.getElementById("7").innerHTML = "Problem 7: 0/10"
   }
   if(problem8 == "138")
   {
-    document.getElementById("8").innerHTML = " 10/10"
+    document.getElementById("8").innerHTML = "Problem 8: 10/10"
     total = total + 10;
   }
   else
   {
-    document.getElementById("8").innerHTML = " 0/10"
+    document.getElementById("8").innerHTML = "Problem 8: 0/10"
   }
   document.getElementById("total").innerHTML = "Final Score: " + total + "/150";
 }
